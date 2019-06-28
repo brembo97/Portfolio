@@ -98,7 +98,6 @@ nav a:hover{
 #about{
     line-height: 18pt;
     padding: 100px 0 50px;
-    margin-bottom: 50px;
 }
 
 .header {
@@ -117,29 +116,39 @@ nav a:hover{
 
 .card{
     margin: 0 10px;
-    font-size: 16px;
+    color: #616161;
     width: 100%;
 }
 
 .label{
-    margin-bottom: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
     font-weight: 700;
+}
+
+.desc{
+    font-size: 14px;
 }
 
 #skills{
     line-height: 18pt;
-    padding: 100px 0 50px;
-    margin-bottom: 100px;
-}
-
-#skills .label{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 15px;
+    padding: 100px 0 100px;
+   
 }
 
 ul{
     list-style: none;
+}
+
+#portfolio{
+    line-height: 18pt;
+    padding: 80px 0 100px;
+    background: linear-gradient(#fff, #E7E7E7, #9D9D9D,#384760);
+}
+
+.block{
+    overflow: hidden;
 }
 
 
