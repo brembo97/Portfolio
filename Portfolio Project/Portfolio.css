@@ -15,6 +15,12 @@ section{
     width: 100%;
 }
 
+i{
+    color: rgba(71, 255, 118,0.85);
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -23,7 +29,7 @@ section{
     line-height: 36pt;
 }
 .container #name{
-    color:rgb(46, 110, 137);
+    color:rgb(38, 255, 56);
 }
 .container #box-btn{
     border: 2px solid #fff;
@@ -44,7 +50,7 @@ section{
 }
 
 #home{
-    background-color: rgb(84, 162, 191);
+    background-color: rgb(29, 47, 77);
     height: 100vh;
 }
 
@@ -52,7 +58,7 @@ nav{
     height: 50px;
     background-color: rgb(56, 71, 96);
     z-index: 99;
-    border-bottom: solid 2px rgb(196, 64, 152);
+    border-bottom: solid 2px rgb(38, 255, 56);
 }
 nav a {
     padding: 12px;
@@ -64,7 +70,7 @@ nav a {
 }
 nav a:hover{
     transition: 0.1s ease;
-    color:rgb(196, 64, 152);
+    color:rgb(38, 255, 56);
 }
 
 .sticky{
@@ -111,7 +117,13 @@ nav a:hover{
 
 .card{
     margin: 0 10px;
-    font: 14px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.label{
+    margin-bottom: 100px;
+    font-weight: 700;
 }
 
 #skills{
