@@ -21,6 +21,16 @@ i{
     padding-bottom: 10px;
 }
 
+#arrow{
+    font-size: 1em;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+#arrow:hover{
+    transform: rotate(-90deg);
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -37,6 +47,10 @@ i{
     margin: 20px auto;
     font-size: 0.8em;
     cursor: pointer;
+    transition: all .5s;
+}
+.container #box-btn:hover{
+    background-color: rgb(255, 174, 33);
 }
 
 .flex{
@@ -64,13 +78,13 @@ nav a {
     padding: 12px;
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 18pt;
     display: inline-block;
 }
 nav a:hover{
     transition: 0.1s ease;
-    color:rgb(38, 255, 56);
+    color:rgb(255, 174, 33);
 }
 
 .sticky{
@@ -106,6 +120,12 @@ nav a:hover{
     color: #444649;
     text-align: center;
     margin-bottom: 100px;
+}
+.header::after{
+    content:'';
+    display:block;
+    position: relative;
+    border: 1px solid rgb(255, 174, 33, 0.4);
 }
 
 .cards {
@@ -143,7 +163,7 @@ ul{
 
 #portfolio{
     line-height: 18pt;
-    padding: 80px 0 100px;
+    padding: 80px 0 50px;
     background: linear-gradient(#fff, #E7E7E7, #9D9D9D,#384760);
 }
 
@@ -152,6 +172,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: space-around;
     flex-wrap: wrap;
  }
 
@@ -160,6 +181,8 @@ ul{
     width:400px;
     height:300px;
     box-shadow: -5px 5px 15px black;
+    margin-bottom: 100px;
+    margin-right: 20px;
 }
 
 
