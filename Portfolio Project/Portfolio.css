@@ -183,6 +183,13 @@ ul{
     flex-wrap: wrap;
  }
 
+ .block{
+     display: flex;
+     direction: row;
+     justify-content: flex-start;
+     width: 100%
+ }
+
 .block a img{
     overflow: hidden;
     width:400px;
@@ -194,6 +201,33 @@ ul{
 }
 .block a img:hover{
     transform: translate(-10px);
+}
+
+h5{
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: left;   
+    margin-left: 10px;
+}
+.project-desc, .project-tech{
+    padding: 0 0 20px 15px;
+    line-height: 1.6;
+}
+
+.tech-list{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: baseline;
 }
 
 #contact{
