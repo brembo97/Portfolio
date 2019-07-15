@@ -21,16 +21,6 @@ i{
     padding-bottom: 10px;
 }
 
-#arrow{
-    font-size: 1em;
-    padding: 0 5px;
-    vertical-align: middle;
-}
-
-#arrow:hover{
-    transform: rotate(-90deg);
-}
-
 .container{
     width: 100vw;
     height: 100vh;
@@ -41,17 +31,31 @@ i{
 .container #name{
     color:rgb(38, 255, 56);
 }
-.container #box-btn{
+.container .button{
     border: 2px solid #fff;
     padding: 10px;
     margin: 20px auto;
     font-size: 0.8em;
     cursor: pointer;
-    transition: all .5s;
+    transition: all 0.5s ease-out;
 }
-.container #box-btn:hover{
+.container .button:hover{
     background-color: rgb(255, 174, 33);
+    border-color: rgb(255, 174, 33);
+    color:  rgb(29, 47, 77);
 }
+
+.button:hover .fa-angle-down{
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+
+.fa-angle-down{
+    font-size: 1em;
+    padding: 0 5px;
+    vertical-align: baseline;
+}
+
 
 .flex{
     display: flex;
@@ -124,8 +128,8 @@ nav a:hover{
 .header::after{
     content:'';
     display:block;
-    position: relative;
-    border: 1px solid rgb(255, 174, 33, 0.4);
+    margin-top: 12px;
+    border: 1px solid rgb(255, 174, 33, 0.8);
 }
 
 .cards {
@@ -154,7 +158,10 @@ nav a:hover{
 #skills{
     line-height: 18pt;
     padding: 100px 0 100px;
-   
+}
+
+#skills-text{
+    display: inline-block;
 }
 
 ul{
@@ -164,7 +171,7 @@ ul{
 #portfolio{
     line-height: 18pt;
     padding: 80px 0 50px;
-    background: linear-gradient(#fff, #E7E7E7, #9D9D9D,#384760);
+    background: linear-gradient(#fff, #869bbf,#4e6080,#384760);
 }
 
 .gallery {
