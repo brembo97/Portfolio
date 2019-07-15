@@ -190,7 +190,68 @@ ul{
     box-shadow: -5px 5px 15px black;
     margin-bottom: 100px;
     margin-right: 20px;
+    transition: transform .3s;
 }
+.block a img:hover{
+    transform: translate(-10px);
+}
+
+#contact{
+    padding-bottom: 50px;
+}
+
+.contact-section{
+    margin: 30px 0px 50px;
+    font-size: 26px;
+    color: #384760;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom:  1px solid #384760;
+}
+
+#email-container{
+    padding: 5px 0 20px;
+}
+
+#email{
+    text-decoration: none;
+    color: #384760;
+    font-size: 15px;
+}
+
+.contact-links i{
+    padding: 10px 15px;
+    font-size: 2.5em;
+}
+
+a i:hover{
+    color: rgb(255, 174, 33);
+    transition: 0.5s ease;
+}
+
+footer{
+    background-color: #869bbf;
+}
+
+.footnote{
+    padding: 10px 0 30px;
+    color: #fff;
+}
+
+.fa-angle-double-up{
+    transform: translateY(-17px);
+    background: #384760;
+    padding: 3px 10px;
+    border-radius: 5%;
+}
+
+.highlight{
+    color: rgb(38, 255, 56);
+}
+
+
+
+
 
 
 
