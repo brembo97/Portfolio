@@ -1,3 +1,4 @@
+/* HEAD CONTAINER */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +20,11 @@ i{
     color: rgba(71, 255, 118,0.85);
     font-size: 2em;
     padding-bottom: 10px;
+}
+li i {
+    color: rgb(255, 174, 33);
+    font-size: 2em;
+    padding-left: 3px;
 }
 
 .container{
@@ -72,6 +78,8 @@ i{
     height: 100vh;
 }
 
+/* NAV BAR */
+
 nav{
     height: 50px;
     background-color: rgb(56, 71, 96);
@@ -112,6 +120,8 @@ nav a:hover{
     justify-content: space-around;
     height: 100%;
 }
+
+/* ABOUT SECTION */
 
 #about{
     line-height: 18pt;
@@ -155,6 +165,8 @@ nav a:hover{
     font-size: 14px;
 }
 
+/* SKILLS SECTION */
+
 #skills{
     line-height: 18pt;
     padding: 100px 0 100px;
@@ -167,6 +179,8 @@ nav a:hover{
 ul{
     list-style: none;
 }
+
+/* PROJECTS SECTION */
 
 #portfolio{
     line-height: 18pt;
@@ -217,8 +231,8 @@ h5{
     text-align: left;   
     margin-left: 10px;
 }
-.project-desc, .project-tech{
-    padding: 0 0 20px 15px;
+.project-section{
+    padding: 0 0 15px 15px;
     line-height: 1.6;
 }
 
@@ -229,6 +243,8 @@ h5{
     text-align: left;
     align-items: baseline;
 }
+
+/* CONTACT SECTION */
 
 #contact{
     padding-bottom: 50px;
@@ -261,7 +277,10 @@ h5{
 a i:hover{
     color: rgb(255, 174, 33);
     transition: 0.5s ease;
+    cursor: pointer;
 }
+
+/* FOOTER SECTION */
 
 footer{
     background-color: #869bbf;

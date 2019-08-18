@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./Portfolio.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="Portfolio.js" defer></script>
     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
     <!--  <script src="https://kit.fontawesome.com/89d3dd1ec3.js"></script> -->
     <title>Emilio Brenes</title>
 </head>
 <body>
-    <!-- Poner iconos para github, link in, resume en la pagina titular-->
+
     <!-- Para cada proyecto tener: link al proyecto, codigo, desc, tecnologias-->
     <!--PRELOADER-->
     <div class="preloader" style="display: none;"></div>
@@ -40,6 +41,7 @@
             <div class="wrap wrapper">
                 <div class="page-link link1"><a href="#home">Home</a></div>
                 <div class="page-link link2"><a href="#about">About</a></div>
+                <div class="page-link link2"><a href="#skills">Skills</a></div>
                 <div class="page-link link3"><a href="#portfolio">Portfolio</a></div>
                 <div class="page-link link4"><a href="#contact">Contact</a></div>
             </div>
@@ -65,12 +67,12 @@
                 <div class="card col3">
                     <i class="fas fa-lightbulb icons"></i>
                     <div class="label">Self-starter</div>
-                    <div class="desc">Self-motivated every day to learn new skills and techonolgies</div>
+                    <div class="desc">Self-motivated every day to learn new skills and technologies</div>
                 </div>
                 <div class="card col4">
                         <i class="fas fa-leaf"></i>
                     <div class="label">Costa Rica Based</div>
-                    <div class="desc">Rooted in  one of the world's most biodiverse countries</div>
+                    <div class="desc">Rooted in Central America's most prominent technological hub</div>
                 </div>
             </div>
     </div></section>
@@ -86,9 +88,9 @@
                     <div class="desc">
                         <ul>
                             <!--Lista de tecnologias FE-->
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript ES6</li>
+                            <li>HTML <i class="fab fa-html5"></i></li>
+                            <li>CSS <i class="fab fa-css3-alt"></i></li>
+                            <li>JavaScript ES6 <i class="fab fa-js"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -97,9 +99,9 @@
                     <div class="desc">
                         <ul>
                            <!--Lista de tecnologias BE-->
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>SQL</li>                         
+                            <li>Python <i class="fab fa-python"></i></li>
+                            <li>Java <i class="fab fa-java"></i></i></li>
+                            <li>SQL <i class="fas fa-database"></i></i></li>                         
                             <li>MySQL</li>                         
                         </ul>
                     </div>
@@ -109,9 +111,8 @@
                     <div class="desc">
                         <ul>
                             <!--Lista de Librerias manejadas-->
-                            <li>Git</li>
-                            <li>SCRUM</li>
-                            <li>Github</li>
+                            <li>Git <i class="fab fa-git-square"></i></li>
+                            <li>Github <i class="fab fa-github-square"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -120,8 +121,8 @@
                         <div class="desc">
                             <ul>
                                 <!--Lista de Librerias manejadas-->
-                                <li>Bootstrap</li>
-                                <li>React</li>
+                                <li>Bootstrap <i class="fab fa-bootstrap"></i></li>
+                                <li>React <i class="fab fa-react"></i></li>
                             </ul>
                         </div>
                     </div>
@@ -135,13 +136,15 @@
             <div class="header" id="projects">Projects</div>
             <div class="gallery">
                 <div class="block bk-1">
-                    <a href="https://lit-atoll-73903.herokuapp.com/"><img src="../Images/YelpCamp.PNG" alt=""></a>
+                    <div class="projectImage">
+                        <a href="https://lit-atoll-73903.herokuapp.com/"><img src="../Images/YelpCamp.PNG" alt=""></a>
+                    </div>                   
                     <div class="project-info">
-                        <div class="project-desc">
+                        <div class="project-section">
                             <h5>Description</h5>
                             <p>Marketplace platform which lets users post, comment and review camping sites.</p>
                         </div>
-                        <div class="project-tech">
+                        <div class="project-section">
                             <h5>Technologies</h5>
                             <div class="tech-list">
                                 <ul>
@@ -150,18 +153,24 @@
                                     <li>Node JS</li>
                                     <li>CSS</li>
                                 </ul>
-                            </div>
+                            </div>                                                 
                         </div>
+                        <div class="project-section">
+                            <h5>Code</h5>
+                            <a href="https://github.com/brembo97/YelpCamp"><i class="fab fa-github"></i></a>
+                        </div>   
                     </div>
                 </div>
                 <div class="block bk-2">
-                    <a href="https://github.com/brembo97/DiceGame"><img src="../Images/DiceGame.PNG" alt=""></a>
+                    <div class="projectImage">
+                        <a href="https://github.com/brembo97/DiceGame"><img src="../Images/DiceGame.PNG" alt=""></a>
+                    </div>                    
                     <div class="project-info">
-                        <div class="project-desc">
+                        <div class="project-section">
                             <h5>Description</h5>
                             <p>Interactive roll the dice game.</p>
                         </div>
-                        <div class="project-tech">
+                        <div class="project-section">
                             <h5>Technologies</h5>
                             <div class="tech-list">
                                 <ul>
@@ -171,16 +180,22 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="project-section">
+                            <h5>Code</h5>
+                            <a herf="https://github.com/brembo97/DiceGame"><i class="fab fa-github"></i></a>
+                        </div>  
                     </div>
                 </div>
                 <div class="block bk-3">
-                    <a href="https://github.com/brembo97/myBudget"><img src="../Images/BudgetApp.PNG" alt=""></a>
+                    <div class="projectImage">
+                        <a href="https://github.com/brembo97/myBudget"><img src="../Images/BudgetApp.PNG" alt=""></a>
+                    </div>
                     <div class="project-info">
-                        <div class="project-desc">
+                        <div class="project-section">
                             <h5>Description</h5>
-                            <p>Budget Trackets that records and updates income and expenses of the current month.</p>
+                            <p>Budget Tracker that records and updates income and expenses of the current month.</p>
                         </div>
-                        <div class="project-tech">
+                        <div class="project-section">
                             <h5>Technologies</h5>
                             <div class="tech-list">
                                 <ul>
@@ -190,8 +205,11 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    
+                        <div class="project-section">
+                            <h5>Code</h5>
+                            <a href="https://github.com/brembo97/myBudget"><i class="fab fa-github"></i></a>
+                        </div> 
+                    </div>       
                 </div>
             </div>
         </div>
@@ -212,6 +230,7 @@
             <div class="contact-links">
                 <a href="https://github.com/brembo97"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/emilio-brenes/"><i class="fab fa-linkedin icons"></i></a>
+                <a href="../Images/SDCV.pdf"><i class="fas fa-file-pdf"></i></a>
             </div>
         </div>
     </section>
