@@ -145,6 +145,7 @@ nav a:hover{
 .cards {
     display: flex;
     justify-content: space-between;
+    width:100%;
     margin: 0 auto;
 }
 
@@ -201,19 +202,24 @@ ul{
      display: flex;
      direction: row;
      justify-content: flex-start;
-     width: 100%
+     width: 100%;
  }
 
-.block a img{
-    overflow: hidden;
-    width:400px;
-    height:300px;
-    box-shadow: -5px 5px 15px black;
+ .project-image{
+    max-width: 500px;
+    width: 400px;
+    height: auto;
     margin-bottom: 100px;
     margin-right: 20px;
+ }
+
+.project-image a img{
+    width: 400px;
+    height: 300px;
+    box-shadow: -5px 5px 15px black;
     transition: transform .3s;
 }
-.block a img:hover{
+.project-image a img:hover{
     transform: translate(-10px);
 }
 
@@ -234,6 +240,15 @@ h5{
 .project-section{
     padding: 0 0 15px 15px;
     line-height: 1.6;
+}
+
+.float{
+    display: inline-flex;
+    float: left;
+}
+
+.tech{
+    margin-right: 60px;
 }
 
 .tech-list{
@@ -302,8 +317,62 @@ footer{
     color: rgb(38, 255, 56);
 }
 
+@media screen and (max-width: 910px){
 
+    .wrapper{
+        width:80%;
+    }
 
+    .header{
+        margin-bottom: 60px;
+    }
+
+    #skills{
+        line-height: 18pt;
+        padding: 50px 0 50px;
+    }
+
+    .cards{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .card{
+        width:40%;
+        margin: 0 15px 40px 15px;
+    }
+
+    .block{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-info{
+        width: 60%;
+        margin-bottom: 50px;
+    }
+
+    .project-image{
+        margin: 20px 0 50px;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .card{
+        width: 70%;
+    }
+
+    .project-info{
+        width: 80%;
+    }
+
+    #portfolio{
+        padding-top: 50px;
+    }
+
+}
 
 
 
