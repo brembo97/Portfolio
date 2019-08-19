@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link href="./Portfolio.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script type="text/javascript" src="Portfolio.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-    <!--  <script src="https://kit.fontawesome.com/89d3dd1ec3.js"></script> -->
+
     <title>Emilio Brenes</title>
 </head>
 <body>
-
-    <!-- Para cada proyecto tener: link al proyecto, codigo, desc, tecnologias-->
-    <!--PRELOADER-->
-    <div class="preloader" style="display: none;"></div>
-
     <!--HOME-->
     <section id="home"> 
        <!-- <div id="particlesJS"><canvas class="particles-js-canvas-el" width="1684" height="200" style="width: 100%; height: 100%;"></canvas></div> --> 
@@ -54,22 +53,22 @@
         <div class="flex wrapper">
             <div class="header" id="about-text">About</div>
             <div class="cards ">
-                <div class="card col1">
+                <div class="card col1" data-aos="fade-up-right">
                     <i class="fas fa-project-diagram"></i>
-                    <div class="label">Data Science</div>
+                    <div class="label" >Data Science</div>
                     <div class="desc">Passionate about Data Science and It's applications</div>
                 </div>
-                <div class="card col2">
+                <div class="card col2" data-aos="fade-down-right">
                     <i class="fas fa-globe"></i>
                     <div class="label">Web Applications</div>
                     <div class="desc">Love to develope web applications focused on solving real world problems</div>
                 </div>
-                <div class="card col3">
+                <div class="card col3" data-aos="fade-up-left">
                     <i class="fas fa-lightbulb icons"></i>
                     <div class="label">Self-starter</div>
                     <div class="desc">Self-motivated every day to learn new skills and technologies</div>
                 </div>
-                <div class="card col4">
+                <div class="card col4" data-aos="fade-down-left">
                         <i class="fas fa-leaf"></i>
                     <div class="label">Costa Rica Based</div>
                     <div class="desc">Rooted in Central America's most prominent technological hub</div>
@@ -83,7 +82,7 @@
         <div class="wrapper">
             <div class="header" id="skills-text">Technologies</div>
             <div class="cards">
-                <div class="card front">
+                <div class="card front" data-aos="zoom-in-right">
                     <div class="label ">Front-End</div>
                     <div class="desc">
                         <ul>
@@ -94,7 +93,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card back">
+                <div class="card back" data-aos="zoom-in-right" data-aos-delay="400">
                     <div class="label">Back-End</div>
                     <div class="desc">
                         <ul>
@@ -106,7 +105,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card version">
+                <div class="card version" data-aos="zoom-in-left" data-aos-delay="800">
                     <div class="label ">Version Control</div>
                     <div class="desc">
                         <ul>
@@ -116,7 +115,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card frameworks">
+                <div class="card frameworks" data-aos="zoom-in-left" data-aos-delay="1200">
                         <div class="label ">Frameworks</div>
                         <div class="desc">
                             <ul>
@@ -137,7 +136,9 @@
             <div class="gallery">
                 <div class="block bk-1">
                     <div class="project-image">
-                        <a href="https://lit-atoll-73903.herokuapp.com/"><img src="../Images/YelpCamp.PNG" alt=""></a>
+                        <a href="https://lit-atoll-73903.herokuapp.com/">
+                            <img src="../Images/YelpCamp.PNG" alt="" data-aos="flip-up" data-aos-easing="ease-in" data-aos-delay="100">
+                        </a>
                     </div>                   
                     <div class="project-info">
                         <div class="project-section">
@@ -166,8 +167,10 @@
                     </div>
                 </div>
                 <div class="block bk-2">
-                    <div class="project-image">
-                        <a href="https://github.com/brembo97/DiceGame"><img src="../Images/DiceGame.PNG" alt=""></a>
+                    <div class="project-image" >
+                        <a href="https://github.com/brembo97/DiceGame">
+                            <img src="../Images/DiceGame.PNG" alt="" data-aos="flip-up" data-aos-easing="ease-in" data-aos-delay="100">
+                        </a>
                     </div>                    
                     <div class="project-info">
                         <div class="project-section">
@@ -196,7 +199,9 @@
                 </div>
                 <div class="block bk-3">
                     <div class="project-image">
-                        <a href="https://github.com/brembo97/myBudget"><img src="../Images/BudgetApp.PNG" alt=""></a>
+                        <a href="https://github.com/brembo97/myBudget">
+                            <img src="../Images/BudgetApp.PNG" data-aos="flip-up" data-aos-easing="ease-in" data-aos-delay="100">
+                        </a>
                     </div>
                     <div class="project-info">
                         <div class="project-section">
@@ -257,7 +262,11 @@
     </footer>
     <!--END OF FOOTER-->
 
-    
+   <script>
+       AOS.init({
+           duration: 1200
+       })
+   </script> 
 </body>
 </html>
 

@@ -217,10 +217,9 @@ ul{
     width: 400px;
     height: 300px;
     box-shadow: -5px 5px 15px black;
-    transition: transform .3s;
 }
 .project-image a img:hover{
-    transform: translate(-10px);
+    transform: translate(-15px, -5px);
 }
 
 h5{
